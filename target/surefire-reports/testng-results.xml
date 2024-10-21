@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-21T20:25:58 IST" name="Suite" finished-at="2024-10-21T20:26:32 IST" duration-ms="33710">
+    <groups>
+    </groups>
+    <test started-at="2024-10-21T20:25:58 IST" name="TestChrome" finished-at="2024-10-21T20:26:26 IST" duration-ms="27869">
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:25:59 IST" name="setDriver" finished-at="2024-10-21T20:26:01 IST" duration-ms="2573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:26:01 IST" name="launchURL" finished-at="2024-10-21T20:26:03 IST" duration-ms="2195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="login()[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:26:03 IST" name="login" finished-at="2024-10-21T20:26:10 IST" duration-ms="6291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:26:10 IST" name="quitDriver" finished-at="2024-10-21T20:26:10 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:26:10 IST" name="setDriver" finished-at="2024-10-21T20:26:20 IST" duration-ms="10059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:26:20 IST" name="launchURL" finished-at="2024-10-21T20:26:22 IST" duration-ms="1866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="login1()[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:26:22 IST" name="login1" finished-at="2024-10-21T20:26:26 IST" duration-ms="3964" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Tests.LoginTest.login1(LoginTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Tests.LoginTest@6d763516]" started-at="2024-10-21T20:26:26 IST" name="quitDriver" finished-at="2024-10-21T20:26:26 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- TestChrome -->
+    <test started-at="2024-10-21T20:25:58 IST" name="TestFirefox" finished-at="2024-10-21T20:26:32 IST" duration-ms="33710">
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:25:59 IST" name="setDriver" finished-at="2024-10-21T20:26:10 IST" duration-ms="11867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:26:10 IST" name="launchURL" finished-at="2024-10-21T20:26:12 IST" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="login()[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:26:12 IST" name="login" finished-at="2024-10-21T20:26:18 IST" duration-ms="6210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:26:18 IST" name="quitDriver" finished-at="2024-10-21T20:26:19 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:26:19 IST" name="setDriver" finished-at="2024-10-21T20:26:24 IST" duration-ms="5877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:26:24 IST" name="launchURL" finished-at="2024-10-21T20:26:27 IST" duration-ms="2173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="login1()[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:26:27 IST" name="login1" finished-at="2024-10-21T20:26:31 IST" duration-ms="4007" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Tests.LoginTest.login1(LoginTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Tests.LoginTest@3754a4bf]" started-at="2024-10-21T20:26:31 IST" name="quitDriver" finished-at="2024-10-21T20:26:32 IST" duration-ms="1229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- TestFirefox -->
+  </suite> <!-- Suite -->
+</testng-results>
