@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -17,23 +19,28 @@ public class ReadExccel {
 		FileInputStream inp = new FileInputStream(System.getProperty("user.dir")+"\\testdata\\testdataexcel.xlsx");
 		XSSFWorkbook wb = new XSSFWorkbook(inp);
 		XSSFSheet sheet = wb.getSheet("Sheet1");
-		int rows = sheet.getLastRowNum();
-		int col = sheet.getRow(1).getLastCellNum();
+		//int rows = sheet.getLastRowNum();
+		//int col = sheet.getRow(1).getLastCellNum();
 		
-		System.out.println("Total Rows: " + rows);
-		System.out.println("Total Cols: " + col);
+		//System.out.println("Total Rows: " + rows);
+		//System.out.println("Total Cols: " + col);
 		
-		for(int i=0; i<=rows;i++) {
-			
-			XSSFRow currentRow= sheet.getRow(i);
-			
-			for(int j=0;j<col;j++) {
-				XSSFCell cell = currentRow.getCell(j);
-					
+		for(Row row : sheet) {
+			for(Cell cell : row) {
 				System.out.print(cell.toString() + " | ");
 			}
 			System.out.println();
 		}
+		
+		/*
+		 * for(int i=0; i<=rows;i++) {
+		 * 
+		 * XSSFRow currentRow= sheet.getRow(i);
+		 * 
+		 * for(int j=0;j<col;j++) { XSSFCell cell = currentRow.getCell(j);
+		 * 
+		 * System.out.print(cell.toString() + " | "); } System.out.println(); }
+		 */
 		
 		wb.close();
 		inp.close();
