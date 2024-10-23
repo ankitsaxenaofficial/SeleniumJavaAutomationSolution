@@ -25,7 +25,7 @@ public class ExtentReportManager implements ITestListener{
 	
 	public void onStart(ITestContext context) {
 	
-		LocalDateTime now = LocalDateTime.now();
+	LocalDateTime now = LocalDateTime.now();
         
         // Define the format of the timestamp
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
