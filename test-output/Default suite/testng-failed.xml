@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.LoginTest">
+      <class name="Tests.LoginTestShortRoute">
         <methods>
           <include name="quitDriver"/>
-          <include name="login1"/>
-          <include name="launchURL"/>
+          <include name="acceptAndContinue"/>
+          <include name="validLogin"/>
           <include name="setDriver"/>
         </methods>
-      </class> <!-- Tests.LoginTest -->
+      </class> <!-- Tests.LoginTestShortRoute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

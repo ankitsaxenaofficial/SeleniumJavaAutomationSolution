@@ -3,31 +3,53 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import utilities.WaitUtil;
+import utilities.WrapperUtilities;
 
 public class LoginPage extends BasePage {
 	
 	WebDriver driver;
-	@FindBy(name = "username")
-	WebElement uName;
 	
-	@FindBy(name = "password")
+	@FindBy(xpath = "//a[contains(.,'Mail-Account anlegen')]")
+	WebElement loginButton;
+	
+	@FindBy(css = "a[aria-label='Login']")
+	WebElement mainLoginBtn;
+	
+	@FindBy(css = "input#mailInput")
+	WebElement email;
+	
+	@FindBy(id = "pwInput")
 	WebElement pwd;
 	
-	@FindBy(xpath = "//button[@type='submit']")
-	WebElement submitBtn;
+	@FindBy(xpath="//button[text()='Login']")
+	WebElement directLoginBtn;
+	
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
 	
-	public HomePage login(String username, String password) {
+	public LoginPage clickLoginButton() {
+		WrapperUtilities.waitForElementVisible(loginButton);
+		loginButton.click();
+		WrapperUtilities.waitForElementVisible(mainLoginBtn);
+		mainLoginBtn.click();
+		return new LoginPage(driver);
+	}
+	
+	public DashboardPage directLogin(String username, String password) {
 		
-		//WaitUtil.waitForElementVisible(uName);
-		uName.sendKeys(username);
+		WrapperUtilities.waitForElementVisible(directLoginBtn);
+		email.sendKeys(username);
 		pwd.sendKeys(password);
-		submitBtn.click();
+		directLoginBtn.click();
 		
-		return new HomePage(driver);
+		return new DashboardPage(driver);
+	}
+	
+	public boolean verifyIfLoginBtnExist() throws InterruptedException {
+		
+		
+		 return WrapperUtilities.waitForElementVisible(directLoginBtn).isDisplayed();
 	}
 }
